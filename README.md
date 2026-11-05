@@ -1,51 +1,11 @@
-# Student Result Management System (C++)
+## About the project
 
-A simple console application built in C++ for the **OOPS (C++) PBL / Mini Project** at Chandigarh University. It stores student records with custom subjects, calculates percentage and grade automatically, and includes a **Scholarship Predictor** as its unique feature.
+Student Result Management System is a console application written in C++ using Object Oriented Programming. It was developed as the OOPS (C++) PBL / Mini Project at Chandigarh University.
 
-## Features
-- Add a student with an ID (letters and digits allowed, e.g. `25BCD10200`), a name, and attendance
-- Enter your own **subject names** and a mark out of 20 for each subject
-- Reuse the previous student's subjects with one answer (`y/n`)
-- Show all students, or search a student by ID
-- Automatic **percentage** and **grade** (A, B, C, F)
-- Input validation: invalid numbers, marks above 20 and duplicate IDs are rejected
+Teachers can register students, define their own subjects, enter marks out of 20 and instantly get each student's percentage, grade and scholarship. All data is entered through a simple menu, with input validation to prevent mistakes such as invalid numbers, marks above 20 or duplicate IDs.
 
-## Unique feature: Scholarship Predictor
-The scholarship depends on both the percentage and the attendance.
+### What makes it different
+Most result programs only show marks. This project adds a **Scholarship Predictor**: a student's scholarship (100%, 50%, 25% or none) depends on both the percentage and the attendance, which encourages regular attendance as well as good results.
 
-| Percentage | Attendance | Scholarship |
-|---|---|---|
-| 90% or more | 85% or more | 100% |
-| 80% or more | 80% or more | 50% |
-| 70% or more | 75% or more | 25% |
-| otherwise | - | 0% |
-
-## OOP concepts used
-- Classes and objects (`Person`, `Student`)
-- Encapsulation (private data, public member functions)
-- Inheritance (`Student` inherits from `Person`)
-- Constructors and access specifiers (`private`, `protected`, `public`)
-- STL `vector` (students, subject names, marks)
-
-## Build and run
-```bash
-g++ -std=c++17 -o srms main.cpp
-./srms
-```
-
-## Sample output
-```
-ID: 25BCD10200 | Name: Levy Kouame
-   Mathematics: 19/20
-   Computer Science: 18.5/20
-   English: 18/20
-   Attendance: 90% | Percentage: 92.5% | Grade: A | Scholarship: 100%
-```
-
-## Project files
-- `main.cpp` - complete source code
-- `README.md` - project description
-- Project report (DOCX/PDF) and hand-drawn UML class diagram are submitted separately
-
-## Author
-[Your Name] - UID: [Your UID] - Chandigarh University
+### What I learned
+Applying classes and objects, encapsulation, inheritance, constructors and the STL vector in a complete working program.
